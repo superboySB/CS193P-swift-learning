@@ -13,6 +13,8 @@
 		EC5319EA250E0F7000CA8E9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC5319E8250E0F7000CA8E9F /* Main.storyboard */; };
 		EC5319EC250E0F7100CA8E9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC5319EB250E0F7100CA8E9F /* Assets.xcassets */; };
 		EC5319EF250E0F7100CA8E9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC5319ED250E0F7100CA8E9F /* LaunchScreen.storyboard */; };
+		EC72C2F4250F4C0D00965A87 /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC72C2F3250F4C0D00965A87 /* Concentration.swift */; };
+		EC72C2F6250F54AE00965A87 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC72C2F5250F54AE00965A87 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		EC5319EB250E0F7100CA8E9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC5319EE250E0F7100CA8E9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC5319F0250E0F7100CA8E9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC72C2F3250F4C0D00965A87 /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
+		EC72C2F5250F54AE00965A87 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				EC5319F6250E0FC000CA8E9F /* Supporting Files */,
 				EC5319E6250E0F7000CA8E9F /* ViewController.swift */,
 				EC5319E8250E0F7000CA8E9F /* Main.storyboard */,
+				EC72C2F3250F4C0D00965A87 /* Concentration.swift */,
+				EC72C2F5250F54AE00965A87 /* Card.swift */,
 				EC5319EB250E0F7100CA8E9F /* Assets.xcassets */,
 				EC5319F0250E0F7100CA8E9F /* Info.plist */,
 			);
@@ -147,6 +153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC5319E7250E0F7000CA8E9F /* ViewController.swift in Sources */,
+				EC72C2F4250F4C0D00965A87 /* Concentration.swift in Sources */,
+				EC72C2F6250F54AE00965A87 /* Card.swift in Sources */,
 				EC5319E3250E0F7000CA8E9F /* AppDelegate.swift in Sources */,
 				EC5319E5250E0F7000CA8E9F /* SceneDelegate.swift in Sources */,
 			);
