@@ -8,16 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3117D7515FC161E330F333D5 /* Pods_VisionDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FAB69B7329B71C404D46704 /* Pods_VisionDemo.framework */; };
-		EC092FEC2517825100C04CC3 /* ConteneView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC092FEB2517825100C04CC3 /* ConteneView2.swift */; };
+		EC092FEC2517825100C04CC3 /* ConteneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC092FEB2517825100C04CC3 /* ConteneView.swift */; };
 		EC09306B25178EB500C04CC3 /* VisionDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC09306A25178EB500C04CC3 /* VisionDemoApp.swift */; };
-		EC522E6C2515E15A00740762 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC522E6B2515E15A00740762 /* ContentView.swift */; };
 		EC522E6E2515E15B00740762 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC522E6D2515E15B00740762 /* Assets.xcassets */; };
 		EC522E712515E15B00740762 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC522E702515E15B00740762 /* Preview Assets.xcassets */; };
 		ECEA0D4025183F41005E29ED /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEA0D3F25183F41005E29ED /* Model.swift */; };
 		ECEA0D4425184025005E29ED /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEA0D4325184025005E29ED /* NetworkManager.swift */; };
-		ECEA0D4D2518419F005E29ED /* ContentView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEA0D4A2518419F005E29ED /* ContentView1.swift */; };
-		ECEA0D4E2518419F005E29ED /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEA0D4B2518419F005E29ED /* CameraVC.swift */; };
-		ECEA0D4F2518419F005E29ED /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = ECEA0D4C2518419F005E29ED /* MobileNet.mlmodel */; };
 		ECEA0D5E2518804A005E29ED /* CameraState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEA0D5B2518804A005E29ED /* CameraState.swift */; };
 		ECEA0D5F2518804A005E29ED /* CameraViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEA0D5C2518804A005E29ED /* CameraViewDelegate.swift */; };
 		ECEA0D602518804A005E29ED /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEA0D5D2518804A005E29ED /* CameraView.swift */; };
@@ -26,18 +22,14 @@
 /* Begin PBXFileReference section */
 		3464A2AC2E540D09CD3CDA2C /* Pods-VisionDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VisionDemo.release.xcconfig"; path = "Target Support Files/Pods-VisionDemo/Pods-VisionDemo.release.xcconfig"; sourceTree = "<group>"; };
 		5FAB69B7329B71C404D46704 /* Pods_VisionDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VisionDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC092FEB2517825100C04CC3 /* ConteneView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConteneView2.swift; sourceTree = "<group>"; };
+		EC092FEB2517825100C04CC3 /* ConteneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConteneView.swift; sourceTree = "<group>"; };
 		EC09306A25178EB500C04CC3 /* VisionDemoApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisionDemoApp.swift; sourceTree = "<group>"; };
 		EC522E662515E15A00740762 /* VisionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC522E6B2515E15A00740762 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EC522E6D2515E15B00740762 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC522E702515E15B00740762 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EC522E722515E15B00740762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECEA0D3F25183F41005E29ED /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		ECEA0D4325184025005E29ED /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		ECEA0D4A2518419F005E29ED /* ContentView1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView1.swift; sourceTree = "<group>"; };
-		ECEA0D4B2518419F005E29ED /* CameraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
-		ECEA0D4C2518419F005E29ED /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
 		ECEA0D5B2518804A005E29ED /* CameraState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraState.swift; sourceTree = "<group>"; };
 		ECEA0D5C2518804A005E29ED /* CameraViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewDelegate.swift; sourceTree = "<group>"; };
 		ECEA0D5D2518804A005E29ED /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
@@ -96,13 +88,9 @@
 			children = (
 				EC522E722515E15B00740762 /* Info.plist */,
 				EC09306A25178EB500C04CC3 /* VisionDemoApp.swift */,
-				EC522E6B2515E15A00740762 /* ContentView.swift */,
-				ECEA0D4A2518419F005E29ED /* ContentView1.swift */,
-				EC092FEB2517825100C04CC3 /* ConteneView2.swift */,
-				ECEA0D4B2518419F005E29ED /* CameraVC.swift */,
+				EC092FEB2517825100C04CC3 /* ConteneView.swift */,
 				ECEA0D3F25183F41005E29ED /* Model.swift */,
 				ECEA0D4325184025005E29ED /* NetworkManager.swift */,
-				ECEA0D4C2518419F005E29ED /* MobileNet.mlmodel */,
 				ECEA0D5B2518804A005E29ED /* CameraState.swift */,
 				ECEA0D5D2518804A005E29ED /* CameraView.swift */,
 				ECEA0D5C2518804A005E29ED /* CameraViewDelegate.swift */,
@@ -233,17 +221,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECEA0D4F2518419F005E29ED /* MobileNet.mlmodel in Sources */,
-				ECEA0D4D2518419F005E29ED /* ContentView1.swift in Sources */,
 				ECEA0D4025183F41005E29ED /* Model.swift in Sources */,
-				ECEA0D4E2518419F005E29ED /* CameraVC.swift in Sources */,
 				EC09306B25178EB500C04CC3 /* VisionDemoApp.swift in Sources */,
 				ECEA0D4425184025005E29ED /* NetworkManager.swift in Sources */,
 				ECEA0D5E2518804A005E29ED /* CameraState.swift in Sources */,
 				ECEA0D602518804A005E29ED /* CameraView.swift in Sources */,
-				EC092FEC2517825100C04CC3 /* ConteneView2.swift in Sources */,
+				EC092FEC2517825100C04CC3 /* ConteneView.swift in Sources */,
 				ECEA0D5F2518804A005E29ED /* CameraViewDelegate.swift in Sources */,
-				EC522E6C2515E15A00740762 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +366,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bit.dzp.VisionDemo11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bit.dzp.VisionDemo111;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -405,7 +389,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bit.dzp.VisionDemo11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bit.dzp.VisionDemo111;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -6,12 +6,14 @@
 //
 import UIKit
 import Alamofire
+import Foundation
 
 struct NetworkManager {
     static let shared = NetworkManager()
     
     func networkOperation(command: Int, uiImage: UIImage, complete: @escaping (UIImage?) -> Void) {
-        let imageData = uiImage.jpegData(compressionQuality: 0.1)
+        let resizedImage = resizeImage(image: uiImage, newWidth: 300)
+        let imageData = resizedImage!.jpegData(compressionQuality: 0.1)
         let base64Str = imageData!.base64EncodedString()
         let decoder = JSONDecoder()
         let parameters = UploadImageData (command: command, img: base64Str)
@@ -36,4 +38,18 @@ struct NetworkManager {
 
         }
     }
+
+func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage? {
+    let scale = newWidth / image.size.width
+    let newHeight = image.size.height * scale
+    UIGraphicsBeginImageContext(CGSize(width: newWidth, height: newHeight))
+    image.draw(in: CGRect(x: 0, y: 0, width: newWidth, height: newHeight))
+    let newImage = UIGraphicsGetImageFromCurrentImageContext()
+    UIGraphicsEndImageContext()
+    
+    return newImage
+    
+}
+
+
 

@@ -12,7 +12,6 @@ struct UploadImageData: Encodable{
 }
 
 
-
 struct ReturnImageData: Decodable {
     let command: Int
     let img: String
