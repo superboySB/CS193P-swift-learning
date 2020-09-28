@@ -11,6 +11,7 @@ import SwiftUI
 struct VisionDemoApp: App {
     var body: some Scene {
         WindowGroup {
+//            LivenessCheckViewControllerView()
             ContentView()
         }
     }

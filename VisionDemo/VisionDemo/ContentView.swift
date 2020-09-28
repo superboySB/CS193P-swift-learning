@@ -25,22 +25,28 @@ struct ContentView: View {
     
     var body: some View {
         VStack{
-            if (showGetImageView){
-                GetImageView(shownBool: $showGetImageView, getImage: $imageSelected, modeNumber: $modeSelected)
-            }
-            else{
-                if imageSelected == nil {
+            if (modeSelected != 3) {
+                if (showGetImageView){
                     GetImageView(shownBool: $showGetImageView, getImage: $imageSelected, modeNumber: $modeSelected)
                 }
                 else{
-                    CameraView().overlay(
-                        imageSelected!
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 200, height: 333, alignment: .center),
-                        alignment: .topTrailing
-                        )
+                    if imageSelected == nil {
+                        GetImageView(shownBool: $showGetImageView, getImage: $imageSelected, modeNumber: $modeSelected)
+                    }
+                    else{
+                        CameraView().overlay(
+                            imageSelected!
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 200, height: 333, alignment: .center),
+                            alignment: .topTrailing
+                            )
+
+                    }
                 }
+            }
+            else{
+                CameraView()
             }
             
             ScrollView(.horizontal){
@@ -72,10 +78,12 @@ struct ContentView: View {
             }
             .fixedSize(horizontal: false, vertical: true)
             
-            Text("版权所有 . 北京理工大学计算机学院").font(.system(size:10))
-            
+            HStack(spacing:8){
+                Text("版权所有 . 北京理工大学计算机学院").font(.system(size:10))
+                Image("BIT").resizable().frame(width: 30, height: 30)
+            }
+
         }
-        
     }
     
 }
@@ -131,12 +139,16 @@ struct GetImageView {
 }
 
 
+
 extension GetImageView: UIViewControllerRepresentable {
     func makeUIViewController(context:
         UIViewControllerRepresentableContext<GetImageView>) -> UIImagePickerController {
         let picker = UIImagePickerController()
         picker.delegate = context.coordinator
         picker.sourceType = .camera
+        picker.cameraDevice = .front
+
+        
 //        picker.showsCameraControls = false
 
         return picker

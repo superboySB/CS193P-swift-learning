@@ -11,6 +11,12 @@ struct UploadImageData: Encodable{
     let img: String
 }
 
+struct UploadImageDataWithToken: Encodable{
+    let token: String
+    let command: Int
+    let img: String
+}
+
 
 struct ReturnImageData: Decodable {
     let command: Int

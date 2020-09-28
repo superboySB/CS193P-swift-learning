@@ -17,7 +17,7 @@ public struct CameraView: View {
     
     @ObservedObject private var viewModel : CameraViewModel
     
-    public init(delegate: CameraViewDelegate? = nil, cameraType: AVCaptureDevice.DeviceType = .builtInWideAngleCamera, cameraPosition: AVCaptureDevice.Position = .back) {
+    public init(delegate: CameraViewDelegate? = nil, cameraType: AVCaptureDevice.DeviceType = .builtInWideAngleCamera, cameraPosition: AVCaptureDevice.Position = .front) {
         self.delegate = delegate
         self.cameraType = cameraType
         self.cameraPosition = cameraPosition
@@ -37,7 +37,7 @@ public struct CameraView: View {
 
 extension CameraView {
     public class CameraViewModel : NSObject, ObservableObject {
-        @Published var capturedPhoto: UIImage? = nil
+//        @Published var capturedPhoto: UIImage? = nil
         
         private var preview : PreviewHolder
         
@@ -70,7 +70,7 @@ private class PreviewView: UIView, AVCapturePhotoCaptureDelegate {
         return layer as! AVCaptureVideoPreviewLayer
     }
     
-    init(delegate: CameraViewDelegate? = nil, cameraType: AVCaptureDevice.DeviceType = .builtInWideAngleCamera, cameraPosition: AVCaptureDevice.Position = .back) {
+    init(delegate: CameraViewDelegate? = nil, cameraType: AVCaptureDevice.DeviceType = .builtInWideAngleCamera, cameraPosition: AVCaptureDevice.Position = .front) {
         super.init(frame: .zero)
         
         self.delegate = delegate
@@ -176,7 +176,7 @@ private struct PreviewHolder: UIViewRepresentable {
     private var cameraPosition: AVCaptureDevice.Position
     private var view: PreviewView
     
-    init(delegate: CameraViewDelegate? = nil, cameraType: AVCaptureDevice.DeviceType = .builtInWideAngleCamera, cameraPosition: AVCaptureDevice.Position = .back) {
+    init(delegate: CameraViewDelegate? = nil, cameraType: AVCaptureDevice.DeviceType = .builtInWideAngleCamera, cameraPosition: AVCaptureDevice.Position = .front) {
         self.delegate = delegate
         self.cameraType = cameraType
         self.cameraPosition = cameraPosition
